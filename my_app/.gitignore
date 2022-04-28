@@ -1,0 +1,16 @@
+.idea/*
+UladzimirLaziuk
+*.pyc
+shop_site/static/css
+shop_site/static/js
+shop_site/migrations/*
+venv_my_site
+media/cache/
+db.sqlite3
+.docker_env
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+<div class="m-2">
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div>{{ form.as_p }}</div>
+    <div>{{ formset.as_p }}</div>
+    <input type="submit" value="Save">
+
+</form>
+</div>
+
+{% endblock %}
+

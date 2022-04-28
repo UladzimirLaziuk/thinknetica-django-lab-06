@@ -1,0 +1,392 @@
+[
+  {
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "M12345678",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Mike",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-01-10T13:52:50.685Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "J12345678",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Jane",
+    "first_name": "",
+    "last_name": "",
+    "email": "123@mail.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-01-10T13:52:50.685Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "M12345678",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Michael",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-01-10T13:52:50.685Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$1Mu2d8SBg1d03kBtMMCLWc$bimPSwsah37BVgtUVzR9Ev6+h7zavPWKwi3EuHJL0WU=",
+    "last_login": "2022-01-18T13:03:21.642Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-01-10T13:57:00.746Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$uBjc5XFcgKBLVoqmXMqsp7$qyRiUPSEqbqi8gNQ328ck7BiNwUkRu1j8hyuC9xEZsY=",
+    "last_login": "2022-01-12T09:21:57.328Z",
+    "is_superuser": false,
+    "username": "Uladzimir_2",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-01-12T09:21:57.059Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$1j1ldFxhboFfGRY9loKSx9$YW+MUN1YcXrXLyX84neE/XCu41LLca+m0fYF35DLHcY=",
+    "last_login": "2022-01-18T11:21:58.294Z",
+    "is_superuser": false,
+    "username": "Uladzimir_22",
+    "first_name": "",
+    "last_name": "",
+    "email": "1614741@mail.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-01-18T11:21:57.932Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+  {
+    "model": "shop_site.seller",
+    "pk": 1,
+    "fields": {
+      "itn": "",
+      "logo": "image/pingvin_Shkiper.jpg",
+      "phone": "+375296386197"
+    }
+  },
+  {
+    "model": "shop_site.seller",
+    "pk": 2,
+    "fields": {
+      "itn": "as",
+      "logo": "image/pingvin_Shkiper.jpg",
+      "phone": "+375291075375"
+    }
+  },
+  {
+    "model": "shop_site.category",
+    "pk": 1,
+    "fields": {
+      "title": "Auto",
+      "slug": "auto"
+    }
+  },
+  {
+    "model": "shop_site.category",
+    "pk": 2,
+    "fields": {
+      "title": "Bike",
+      "slug": "bike"
+    }
+  },
+  {
+    "model": "shop_site.category",
+    "pk": 3,
+    "fields": {
+      "title": "Books",
+      "slug": "books"
+    }
+  },
+  {
+    "model": "shop_site.category",
+    "pk": 4,
+    "fields": {
+      "title": "electronics",
+      "slug": "electronics"
+    }
+  },
+  {
+    "model": "shop_site.category",
+    "pk": 5,
+    "fields": {
+      "title": "Housing",
+      "slug": "housing"
+    }
+  },
+  {
+    "model": "shop_site.tag",
+    "pk": 1,
+    "fields": {
+      "title": "car"
+    }
+  },
+  {
+    "model": "shop_site.tag",
+    "pk": 2,
+    "fields": {
+      "title": "vehicle"
+    }
+  },
+  {
+    "model": "shop_site.tag",
+    "pk": 3,
+    "fields": {
+      "title": "sale"
+    }
+  },
+  {
+    "model": "shop_site.tag",
+    "pk": 4,
+    "fields": {
+      "title": "exchange"
+    }
+  },
+  {
+    "model": "shop_site.tag",
+    "pk": 5,
+    "fields": {
+      "title": "mers"
+    }
+  },
+  {
+    "model": "shop_site.tag",
+    "pk": 6,
+    "fields": {
+      "title": "smartphone"
+    }
+  },
+  {
+    "model": "shop_site.tag",
+    "pk": 7,
+    "fields": {
+      "title": "lenovo"
+    }
+  },
+  {
+    "model": "shop_site.tag",
+    "pk": 8,
+    "fields": {
+      "title": "what to read"
+    }
+  },
+  {
+    "model": "shop_site.tag",
+    "pk": 9,
+    "fields": {
+      "title": "bibliophile"
+    }
+  },
+  {
+    "model": "shop_site.tag",
+    "pk": 10,
+    "fields": {
+      "title": "sale_of_books"
+    }
+  },
+  {
+    "model": "shop_site.tag",
+    "pk": 11,
+    "fields": {
+      "title": "cpu"
+    }
+  },
+  {
+    "model": "shop_site.tag",
+    "pk": 12,
+    "fields": {
+      "title": "notebook"
+    }
+  },
+  {
+    "model": "shop_site.tag",
+    "pk": 13,
+    "fields": {
+      "title": "diagonal"
+    }
+  },
+  {
+    "model": "shop_site.tag",
+    "pk": 14,
+    "fields": {
+      "title": "home_improvement"
+    }
+  },
+  {
+    "model": "shop_site.ad",
+    "pk": 1,
+    "fields": {
+      "title": "Продажа Mercedes-Benz E-Класс W212, S212, C207, A207, 2009 г.",
+      "category": 1,
+      "seller": 1,
+      "data_create": "2022-01-10T13:52:50.829Z",
+      "data_edit": "2022-01-13T21:35:33.506Z",
+      "price": 5,
+      "tags": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "shop_site.ad",
+    "pk": 2,
+    "fields": {
+      "title": "MacBook в прекрасном состоянии , не ремонтировался , любые ваши проверки, пользовались MacBook не много",
+      "category": 4,
+      "seller": 1,
+      "data_create": "2022-01-10T13:52:50.835Z",
+      "data_edit": "2022-01-13T21:36:05.020Z",
+      "price": 10,
+      "tags": [
+        4,
+        7,
+        12,
+        13
+      ]
+    }
+  },
+  {
+    "model": "shop_site.ad",
+    "pk": 3,
+    "fields": {
+      "title": "Самокат в неплохом состоянии, нужно заменить заднее колесо, тормоза сломаны, под замену или починить. Есть документы, ключи, коробка.",
+      "category": 2,
+      "seller": 1,
+      "data_create": "2022-01-10T13:52:50.841Z",
+      "data_edit": "2022-01-18T13:03:48.797Z",
+      "price": 3,
+      "tags": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "shop_site.ad",
+    "pk": 4,
+    "fields": {
+      "title": "Продам сборники классической литературы.Владимир Маяковский собрание сочинений в 12 томах.",
+      "category": 3,
+      "seller": 2,
+      "data_create": "2022-01-10T13:52:50.847Z",
+      "data_edit": "2022-01-13T21:40:31.859Z",
+      "price": 19,
+      "tags": [
+        3,
+        4,
+        8,
+        9,
+        10
+      ]
+    }
+  },
+  {
+    "model": "shop_site.ad",
+    "pk": 5,
+    "fields": {
+      "title": "Fiat Doblo I европейской сборки авто,1,9JTD",
+      "category": 1,
+      "seller": 2,
+      "data_create": "2022-01-10T13:52:50.853Z",
+      "data_edit": "2022-01-13T21:34:31.527Z",
+      "price": 2,
+      "tags": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "shop_site.ad",
+    "pk": 6,
+    "fields": {
+      "title": "Apple iPhone 11 128GB",
+      "category": 4,
+      "seller": 2,
+      "data_create": "2022-01-10T13:52:50.859Z",
+      "data_edit": "2022-01-13T21:34:20.430Z",
+      "price": 2,
+      "tags": [
+        3,
+        4,
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "model": "shop_site.smslog",
+    "pk": 1,
+    "fields": {
+      "seller": 2,
+      "confirmed": true,
+      "code": 7326
+    }
+  },
+  {
+    "model": "shop_site.smslog",
+    "pk": 2,
+    "fields": {
+      "seller": 1,
+      "confirmed": false,
+      "code": 7326
+    }
+  }
+]

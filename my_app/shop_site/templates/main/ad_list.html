@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="table-responsive-md">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for page in object_list %}
+        <tr>
+            <td scope="row">
+                <a>{{ forloop.counter }}</a>
+            </td>
+            <td scope="row">
+                <a href="{{ page.get_absolute_url }}">{{ page.title }}</a>
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    {% if perms.shop_site.change_ad %}
+        <a href="{% url 'ads_create' %}" class="btn btn-primary" role="button" data-bs-toggle="button">Ad+</a>
+    {% endif %}
+
+
+    <div>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+
+        <input id="chat-message-input" type="text" size="100"><br>
+        <input id="chat-message-submit" type="button" value="Send">
+
+        <script type="text/javascript" src="{% static 'js/scripts_search.js' %}">
+        </script>
+
+    </div>
+
+    {% if perms.shop_site.change_ad %}
+        <a href="{% url 'ads_create' %}" class="btn btn-primary" role="button" data-bs-toggle="button">Ad+</a>
+    {% endif %}
+
+
+</div>
+
+{% endblock %}
+
+{% block sidebar %}
+<div class="table-responsive-md">
+
+    <table class="table">
+        <thead>
+        <tr scope="col">My Category:</tr>
+        </thead>
+        <tr>
+            <td scope="row">
+                <a>{{object_list.category}}</a>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="table table-bordered">
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">My Tags</th>
+        </tr>
+        </thead>
+        {% for tag in tag_list %}
+        <tr>
+            <td scope="row">
+                <a href="{% url 'ad_list' %}?tags_name={{tag}}">{{ tag }}</a>
+            </td>
+        </tr>
+
+        {% endfor %}
+    </table>
+</div>
+
+{% endblock %}
+
+{% block pagination%}
+{% include 'includes/pagination.html' %}
+{% endblock %}
+

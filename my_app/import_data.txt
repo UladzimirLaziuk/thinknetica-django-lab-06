@@ -1,0 +1,18 @@
+
+python manage.py dumpdata --exclude contenttypes  --indent 2 -o dumpdata.json>import_data.tx
+Result:
+    -None
+
+python manage.py flush>>import_data.txt
+Result:
+    You have requested a flush of the database.
+    This will IRREVERSIBLY DESTROY all data currently in the "/home/vladimir/think/UladzimirLaziuk/my_app/db.sqlite3" database,
+    and return each table to an empty state.
+    Are you sure you want to do this?
+
+        Type 'yes' to continue, or 'no' to cancel:
+
+
+python manage.py loaddata dumpdata.json>>import_data.txt
+Result:
+    Installed 87 object(s) from 1 fixture(s)

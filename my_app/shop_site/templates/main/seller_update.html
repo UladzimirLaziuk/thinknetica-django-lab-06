@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'main/base.html' %}
+<!--{% load shop_site_tags %}-->
+{% load static %}
+
+
+{% block content %}
+
+{% load rest_framework %}
+
+<div class="m-2">
+
+
+    <form method="post">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+        {{ form_set.as_p }}
+        {{ forms_code.as_p }}
+        {{ form.errors.all }}
+        {{ form_set.non_field_errors }}
+
+
+        <input type="submit" value="Save">
+    </form>
+</div>
+
+{% endblock %}

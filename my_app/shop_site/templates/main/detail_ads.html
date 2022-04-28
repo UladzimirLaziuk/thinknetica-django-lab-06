@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'main/base.html' %}
+{% load static %}
+{% load sorl_thumbnail %}
+{% load cache %}
+
+{% block content %}
+{% cache 60 detail_ads object.id %}
+<h5 class="m-2">{{ object.title }} </h5>
+
+<ul> Category: {{ object.category.title }}</ul>
+<ul>Tag:
+    {% for tag in object.tags.all %}
+    {{ tag.title }}
+    {% endfor %}
+</ul>
+<ul>Price:{{ object.price }}</ul>
+
+<ul>
+    {% for obj in object.picture_set.all %}
+    {{ obj.title }}:
+
+    {% thumbnail obj.img_ads "140x120" crop="center" as im %}
+    <img src="{{ im.url }}">
+    {% empty %}
+    <p>No image</p>
+    {% endthumbnail %}
+    {% endfor %}
+</ul>
+<a class="m-2" href="{% url 'ad_list' %}">Back</a>
+{% endcache %}
+{% endblock %}

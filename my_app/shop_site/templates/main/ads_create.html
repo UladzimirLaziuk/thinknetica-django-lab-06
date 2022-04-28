@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+<div class="m-2">
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    {{ form.errors.all }}
+
+    <input type="submit" value="Save">
+
+</form>
+</div>
+
+{% endblock %}
