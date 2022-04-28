@@ -57,7 +57,7 @@
   "model": "auth.user",
   "pk": 4,
   "fields": {
-    "password": "pbkdf2_sha256$320000$1Mu2d8SBg1d03kBtMMCLWc$bimPSwsah37BVgtUVzR9Ev6+h7zavPWKwi3EuHJL0WU=",
+    "password": "pbk3257hjfgh",
     "last_login": "2022-01-18T13:03:21.642Z",
     "is_superuser": true,
     "username": "admin",
@@ -75,7 +75,7 @@
   "model": "auth.user",
   "pk": 5,
   "fields": {
-    "password": "pbkdf2_sha256$320000$uBjc5XFcgKBLVoqmXMqsp7$qyRiUPSEqbqi8gNQ328ck7BiNwUkRu1j8hyuC9xEZsY=",
+    "password": "pbkdf2khhljln",
     "last_login": "2022-01-12T09:21:57.328Z",
     "is_superuser": false,
     "username": "Uladzimir_2",
@@ -93,7 +93,7 @@
   "model": "auth.user",
   "pk": 6,
   "fields": {
-    "password": "pbkdf2_sha256$320000$1j1ldFxhboFfGRY9loKSx9$YW+MUN1YcXrXLyX84neE/XCu41LLca+m0fYF35DLHcY=",
+    "password": "pbkdfljhhhhjn",
     "last_login": "2022-01-18T11:21:58.294Z",
     "is_superuser": false,
     "username": "Uladzimir_22",
@@ -113,7 +113,7 @@
     "fields": {
       "itn": "",
       "logo": "image/pingvin_Shkiper.jpg",
-      "phone": "+375296386197"
+      "phone": "+375233333344"
     }
   },
   {
@@ -122,7 +122,7 @@
     "fields": {
       "itn": "as",
       "logo": "image/pingvin_Shkiper.jpg",
-      "phone": "+375291075375"
+      "phone": "+37529346854"
     }
   },
   {
